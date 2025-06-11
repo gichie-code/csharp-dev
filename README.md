@@ -22,7 +22,7 @@ csharp-dev/
 以下のコマンドで `src/` に新しい C# プロジェクトを作成します。
 
 ```bash
-docker compose run --rm csharp-dev dotnet new console -o src --force
+docker compose run --rm csharp-dev dotnet new console -o .
 ```
 
 ## ビルドと実行
@@ -30,7 +30,8 @@ docker compose run --rm csharp-dev dotnet new console -o src --force
 以下のコマンドで C# アプリケーションをビルドし、実行します。
 
 ```bash
-docker compose run --rm csharp-dev dotnet run --project src
+cd src
+docker compose run --rm csharp-dev dotnet run
 ```
 
 ## 備考
